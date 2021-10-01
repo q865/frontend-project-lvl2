@@ -1,8 +1,11 @@
-import { Command } from "commander";
+import { Command } from 'commander';
 const program = new Command();
 
+export default () => {
+  program
+    .description('Compares two configuration files and shows a difference')
+    .version('0.0.1')
 
-program.version('0.2.0');
-
-
-console.log(program);
+  program.parse(process.argv);
+};
+const options = program.opts();
