@@ -11,9 +11,6 @@
     "gendiff": "bin/gendiff.js",
     "nodejs-package": "bin/nodejs-package.js"
   },
-  "simple-git-hooks": {
-    "pre-push": "make lint"
-  },
   "engines": {
     "node": ">=14"
   },
