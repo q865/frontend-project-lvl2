@@ -5,10 +5,17 @@
   "description": "second project frontend-hexlet",
   "main": "index.js",
   "scripts": {
-    "test": "echo Error: no test specified && exit 1"
+    "test": "npx jest"
   },
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js",
+    "nodejs-package": "bin/nodejs-package.js"
+  },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "repository": {
     "type": "git",
