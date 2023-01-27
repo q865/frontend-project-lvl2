@@ -30,6 +30,7 @@ function checkFiles(firstFile, secondFile) {
   writeDifference(keys1, json1, json1, json2, '-');
   writeDifference(keys2, json2, json1, json2, '+');
   console.log(result);
+  // return result
 }
 
 export default () => {
