@@ -1,6 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
+import sum from '../src/sum.js';
 
-import sum from '../src/sum'
+
 
 
 describe('sum module', () => {
