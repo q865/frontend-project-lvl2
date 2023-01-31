@@ -10,6 +10,13 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-vesrion: '16.x'
+          
+      - uses: paambaati/codeclimate-action@v3.2.0
+    env:
+      CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+    with:
+      coverageCommand: npm run coverage
+      debug: true
       
       - run: make install
       
@@ -17,4 +24,4 @@ jobs:
 
       - run: make test
 
-      - run: make test-coverage
+  
